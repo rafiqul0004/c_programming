@@ -6,7 +6,7 @@ int main(){
     sum=a+b;
     mns=a-b;
     mlt=a*b;
-    div=a/b;
+    div=a/(b*1.0);
     printf("%d + %d = %d\n",a,b,sum);
     printf("%d - %d = %d\n",a,b,mns);
     printf("%d * %d = %d\n",a,b,mlt);
