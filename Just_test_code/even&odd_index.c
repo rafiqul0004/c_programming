@@ -1,31 +1,18 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-    int i,t,n;
+    int n,count=0;
     scanf("%d",&n);
-    int r[n];
-    for ( i = 0; i < n; i++)
+    int ar[n];
+    for(int i=0;i<n;i++)
     {
-        scanf("%d",&r[i]);
+        scanf("%d",&ar[i]);
     }
-    scanf("%d",&t);
-    if(t>0){
-    for ( i = 0; i < n; i=i+2)
+    for(int i=0;ar[i]!=0;i++)
     {
-        
-        // if(i%2==0){
-        //     printf("%d ",r[i]);
-        // }
-         printf("%d ",r[i]);  
-        
+        count++;
     }
-    }
-    else{
-    for ( i = 1; i < n; i=i+2)
-    {
-            printf("%d ",r[i]);  
-    }
-    }
-    
+
+    printf("%d",count);
     return 0;
 }
